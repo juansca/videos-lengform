@@ -39,7 +39,7 @@
 \begin{frame}{Enunciado}
 
     Si $\p\ $ es un procedimiento efectivo cuyo conjunto de datos de entrada es
-    $\omega x \Sigma^{*}$, entonces el conjunto $\{(x, \alpha) \in \Sigma^{*}: \p\ termina\ partiendo\ de\ $
+    $\omega x \Sigma^{*}$, entonces el conjunto $\{(x, \alpha) \in \omega x \Sigma^{*}: \p\ termina\ partiendo\ de\ $
     $ (x, \alpha)\}$ es $\Sigma$-efectivamente enumerable.
 
 
@@ -84,7 +84,7 @@
   Daremos explicitamente el procedimiento $\p_{s}\ $
   \begin{itemize}[<+->]
     \item Como $S \neq \emptyset$ entonces existe, al menos, un elemento en $S$.
-    Sea $(x_{1}, \alpha_{1})$ un elemento cualquiera de $S$
+    Sea $(x_{1}, \alpha_{1})$ un elemento de $S$
     \item Supongamos $<$ un orden sobre $\Sigma^{*}$
   \end{itemize}
 
@@ -95,8 +95,8 @@
 \begin{frame}{Prueba: caso $S \neq \emptyset$}
   \underline{$\p_{s}\ $}: Toma como entrada un valor $x \in \omega$
   \begin{itemize}[<+->]
-    \item[ ] \underline{Etapa 1}: Si el valor de entrada, $x$, es igual a $0$
-    y devolver $(x_{1}, \alpha_{1})$ y detenerse. \\
+    \item[ ] \underline{Etapa 1}: Si el valor de entrada, $x$, es igual a $0$,
+    devolver $(x_{1}, \alpha_{1})$ y detenerse. \\
     Si no, correr $\p\ $ una cantidad $(x)_{1}$ pasos con entrada
     $(\ (x)_{2},\ *^{<}(\ (x)_{3})\ )$. Si luego de una cantidad $(x)_{1}$
     de pasos, $\p\ $ termina, devolver $(\ (x)_{2},\ *^{<}(\ (x)_{3})\ )$ y
