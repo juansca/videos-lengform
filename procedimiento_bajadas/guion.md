@@ -30,6 +30,7 @@ Ahora bien, si (S no es vacío) daremos un procedimiento efectivo
 (P sub ese) que enumere al conjunto S.
 
 Veamos.
+
 ---------------
 Por definición, como (P sub ese) debe enumerar a S, entonces debe
 cumplir que:
