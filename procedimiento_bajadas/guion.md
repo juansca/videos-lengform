@@ -1,11 +1,12 @@
 ## GUION
 
 --------------
-Hola, en este video probaremos que "si P es un prcedimiento efectivo cuyo
-conjunto de datos de entrada es [omega por (sigma estrella)], entonces
-el conjunto formado por los pares (x, alfa) pertenecientes a
-[omega por (sigma estrella)] tal que P termina partiendo de (x, alfa) es
-Sigma-efectivamente enumerable".
+
+
+si P es un procedimiento efectivo cuyo conjunto de datos de entrada es
+[omega por (sigma estrella)], entonces el conjunto de datos de entrada
+para los cuales P termina es Sigma-efectivamente enumerable.
+
 
 ---------------
 Veamos esto.
@@ -40,7 +41,8 @@ cumplir que:
 - (P sub ese) siempre termina
 
 ---------------
-- El conjunto de salida de (P sub ese) es S
+- El conjunto de salida de (P sub ese) es S. Es decir, (P sub ese) devuelve SOLO
+elementos que estan en S, y eventualmente devuelve TODOS los elementos de S
 
 --------------
 Bueno, daremos entonces, de manera explicita el procedimiento (P sub
