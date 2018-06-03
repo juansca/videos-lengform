@@ -5,7 +5,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-
+\usepackage{ragged2e} \justifying
 \usepackage{booktabs}
 
 \usepackage{pgfplots}
@@ -45,11 +45,11 @@
 \end{frame}
 
 \begin{frame}{Planteo}
-  \begin{itemize}[<+->]
+  \begin{itemize}[<+->] \justifying
     \item Supongamos $\p\ $ un procedimiento efectivo cuyo conjunto de datos de
     entrada es $\omega x \Sigma^{*}$.
-    \item \centering Probaremos entonces, que el conjunto $S = \{(x, \alpha) \in \Sigma^{*}: \p\ termina\ partiendo\ de\ $
-    $ (x, \alpha)\}$ es $\Sigma$-efectivamente enumerable.
+    \item \centering Probaremos entonces, que el conjunto $S = \{(x, \alpha) \in \Sigma^{*}: \p\ termina\ $
+    $partiendo\ de\ (x, \alpha)\}$ es $\Sigma$-efectivamente enumerable.
   \end{itemize}
 
 \end{frame}
@@ -57,7 +57,7 @@
 
 
 \begin{frame}{Prueba: dos casos}
-  \begin{itemize}[<+->]
+  \begin{itemize}[<+->]\justifying
     \item Si $S = \emptyset$, entonces $S$ es $\Sigma$-efectivamente enumerable por definición.
     \item Si $S \neq \emptyset$, entonces daremos un procedimiento efectivo, $\p_{s}\ $
     que enumere a $S$.
@@ -69,7 +69,7 @@
 \begin{frame}{Prueba: caso $S \neq \emptyset$}
   Por definición, como $\p_{s}\ $ debe enumerar a $S$, entonces debe cumplir que:
 
-  \begin{enumerate}[<+->]
+  \begin{enumerate}[<+->]\justifying
     \item El conjunto de entrada de $\p_{s}\ $ es $\omega$.
     \item $\p_{s}\ $ siempre termina.
     \item El conjunto de salida de $\p_{s}\ $ es $S$.
@@ -81,7 +81,7 @@
 
 \begin{frame}{Prueba: caso $S \neq \emptyset$}
   Daremos explicitamente el procedimiento $\p_{s}\ $
-  \begin{itemize}[<+->]
+  \begin{itemize}[<+->]\justifying
     \item Como $S \neq \emptyset$ entonces existe, al menos, un elemento en $S$.
     Sea $(x_{1}, \alpha_{1})$ un elemento de $S$.
     \item Supongamos $<$ un orden sobre $\Sigma^{*}$.
@@ -94,28 +94,29 @@
 
 \begin{frame}{Prueba: caso $S \neq \emptyset$}
   \underline{$\p_{s}\ $}: Toma como entrada un valor $x \in \omega$.
-  \begin{itemize}[<+->]
+  \begin{itemize}[<+->]\justifying
     \item[ ] \underline{Etapa 1}: Si el valor de entrada, $x$, es igual a $0$,
     devolver $(x_{1}, \alpha_{1})$ y detenerse. \\
     Si no, correr $\p\ $ una cantidad $(x)_{1}$ pasos con entrada
     $(\ (x)_{2},\ *^{<}(\ (x)_{3})\ )$. Si luego de una cantidad $(x)_{1}$
-    de pasos, $\p\ $ termina, devolver $(\ (x)_{2},\ *^{<}(\ (x)_{3})\ )$ y
-    detenerse. Si no termina, devolver $(x_{1}, \alpha_{1})$ y detenerse.
+    de pasos, $\p\ $ termina, devolver \\ $(\ (x)_{2},\ *^{<}(\ (x)_{3})\ )$ y
+    detenerse. \\
+    Si no termina, devolver $(x_{1}, \alpha_{1})$ y detenerse.
 
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Prueba: caso $S \neq \emptyset$}
   Dado que $\p_{s}\ $ es claramente efectivo, veamos que cumple con 1, 2 y 3.
-  \begin{itemize}[<+->]
+  \begin{itemize}[<+->]\justifying
     \item 1 y 2 se cumplen trivialmente. Veamos 3:
-    \begin{itemize}[<+->]
+    \begin{itemize}[<+->]\justifying
       \item Si $(x, \alpha)$ es un elemento cualquiera de $S$, por definición,
       $\p\ $ termina partiendo de $(x, \alpha)$.
       \item Sea $p$ la cantidad de pasos que necesita $\p\ $ para terminar partiendo
       de $(x, \alpha)$.
       \item Entonces, para el valor de entrada
-      $z = 2^{p+1} * 3^{x} * 5^{\#^{<}(\alpha)}$, $\p_{s}\ $ termina y da como salida
+      $z = 2^{p} * 3^{x} * 5^{\#^{<}(\alpha)}$, $\p_{s}\ $ termina y da como salida
       $(x, \alpha)$.
     \end{itemize}
     \item Luego, se cumple 1, 2 y 3.

@@ -101,7 +101,12 @@ Las propiedades 1 y 2, se cumplen trivialmente. Veamos entonces que se
 cumple la propiedad 3.
 
 ------------------
-Sabemos que si (x, alpha) es un elemento cualquiera de S, por definición, P
+Para probar 3, deberíamos probar por un lado que (P sub ese) siempre devuelve
+elementos del conjunto S y que, eventualmente, los devuelve a todos.
+Pero dadas las instrucciones de (P sub ese), resulta evidente lo primero.
+
+Veamos entonces que, eventualmente, devuelve todos los elementos de S.
+Por un lado, sabemos que si (x, alpha) es un elemento cualquiera de S, por definición, P
 terminará partiendo de (x, alfa)
 
 ------------------
@@ -110,7 +115,7 @@ para terminar partiendo de (x, alfa).
 
 ------------------
 Entonces, si tenemos en cuenta las 'bajadas de x' usadas, podemos ver
-que para el valor de entrada [z igual a (2^(p+1) * 3^x * 5^(número correspondiente a alfa))],
+que para el valor de entrada [z igual a (2^(p) * 3^x * 5^(número correspondiente a alfa))],
 el procedimiento (P sub ese) termina y da como salida (x, alfa).
 
 Cabe aclarar que dicho valor de zeta queda en evidencia siguiendo la definición
